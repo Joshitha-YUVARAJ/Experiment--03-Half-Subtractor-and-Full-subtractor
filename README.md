@@ -1,4 +1,4 @@
-# Experiment--03-Half-Subtractor-and-Full-subtractor
+# Experiment--04-Half-Subtractor-and-Full-subtractor
 ## Implementation-of-Half-subtractor-and-Full-subtractor-circuit
 ## AIM:
 To design a half subtractor and full subtractor circuit and verify its truth table in Quartus using Verilog programming.
@@ -27,28 +27,108 @@ Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 
 ## Procedure
 
+1)HALF SUBTRACTOR
+Simulator 1:
+Step-1) Connect the Supply(+5V) to the circuit.
+Step-2) First press "ADD" button to add basic state of your output in the given table.
+Step-3) Press the switches to select the required inputs "A" and "B".
+Step-4) Press "ADD" button to add your inputs and outputs in the given table.
+Step-5) Repeat steps 3&4 for next state of inputs and their corresponding outputs.
+Step-6) Press the "PRINT" button after completing your simulation to get your results.
 
 
-Write the detailed procedure here 
+Simulator 2:
+Step-1) Enter the Boolean input "A" and "B".
+Step-2) Enter the Boolean output for your corresponding inputs.
+Step-3) Click on "Check" Button to verify your output.
+Step-4) Click "Print" if you want to get print out of Truth Table.
+Step-5) Click "Reset" if you want to reset inputs and outputs.
+2)FULL SUBTRACTOR
+Simulator 1:
+Step-1) Connect the Supply(+5V) to the circuit.
+Step-2) First press "ADD" button to add basic state of your output in the given table.
+Step-3) Press the switches to select the required inputs "A" and "B" and "Bin".
+Step-4) Press "ADD" button to add your inputs and outputs in the given table.
+Step-5) Repeat steps 3&4 for next state of inputs and their corresponding outputs.
+Step-6) Press the "PRINT" button after completing your simulation to get your results.
+
+
+Simulator 2:
+Step-1) Enter the Boolean inputs "A" and "B" and "Bin".
+Step-2) Enter the Boolean output for your corresponding inputs.
+Step-3) Click on "Check" Button to verify your output.
+Step-4) Click "Print" if you want to get print out of Truth Table.
+Step-5) Click "Reset" if you want to reset inputs and outputs.
+
+ 
 
 
 ## Program:
+
 /*
+
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
+
+Developed by:YUVARAJ JOSHITHA 
+
 RegisterNumber:  
+
 */
 
+HALF SUBTRACTOR:
+
+```
+module half_sub(output bo,d,input a,b);
+assign d= a^b;
+assign bo=~a&b;
+endmodule
+```
+FULL SUBTRACTOR:
+
+```
+module full_sub(output d,bo,input a,b,c);
+assign d = a^b^c;
+assign bo = ~a&(b^c)|b&c;
+endmodule
+```
 ## Output:
 
 ## Truthtable
+
+HALF SUBTRACTOR:
+
+![Screenshot 2023-12-01 194259](https://github.com/Joshitha-YUVARAJ/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742770/1e71ddfd-8d8b-4c49-9b75-94351e61b398)
+
+
+
+FULL SUBTRACTOR:
+
+![Screenshot 2023-12-01 194345](https://github.com/Joshitha-YUVARAJ/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742770/4af58087-f3a4-4fd6-8082-8737efcb3faf)
 
 
 
 ##  RTL realization
 
+HALF SUBTRACTOR:
+
+![Screenshot 2023-12-01 145223](https://github.com/Joshitha-YUVARAJ/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742770/b2bc3ce7-e8a9-4b3d-a349-73192c3394eb)
+
+FULL SUBTRACTOR:
+
+![Screenshot 2023-12-01 193441](https://github.com/Joshitha-YUVARAJ/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742770/f98891da-84c7-450b-b7c3-e28aad51a301)
+
 
 ## Timing diagram 
+
+HALF SUBTRACTOR:
+
+![Screenshot 2023-12-01 145435](https://github.com/Joshitha-YUVARAJ/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742770/45598a36-05d8-4245-a833-9239beec75ee)
+
+FULL SUBTRACTOR:
+
+![Screenshot 2023-12-01 193855](https://github.com/Joshitha-YUVARAJ/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145742770/ac4d7b49-6aa1-468d-87fb-d4ca0199536d)
+
+
 
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
