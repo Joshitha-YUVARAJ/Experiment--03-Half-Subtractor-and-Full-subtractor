@@ -28,36 +28,61 @@ Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 ## Procedure
 
 1)HALF SUBTRACTOR
+
 Simulator 1:
+
 Step-1) Connect the Supply(+5V) to the circuit.
+
 Step-2) First press "ADD" button to add basic state of your output in the given table.
+
 Step-3) Press the switches to select the required inputs "A" and "B".
+
 Step-4) Press "ADD" button to add your inputs and outputs in the given table.
+
 Step-5) Repeat steps 3&4 for next state of inputs and their corresponding outputs.
+
 Step-6) Press the "PRINT" button after completing your simulation to get your results.
 
 
 Simulator 2:
+
 Step-1) Enter the Boolean input "A" and "B".
+
 Step-2) Enter the Boolean output for your corresponding inputs.
+
 Step-3) Click on "Check" Button to verify your output.
+
 Step-4) Click "Print" if you want to get print out of Truth Table.
+
 Step-5) Click "Reset" if you want to reset inputs and outputs.
+
 2)FULL SUBTRACTOR
+
 Simulator 1:
+
 Step-1) Connect the Supply(+5V) to the circuit.
+
 Step-2) First press "ADD" button to add basic state of your output in the given table.
+
 Step-3) Press the switches to select the required inputs "A" and "B" and "Bin".
+
 Step-4) Press "ADD" button to add your inputs and outputs in the given table.
+
 Step-5) Repeat steps 3&4 for next state of inputs and their corresponding outputs.
+
 Step-6) Press the "PRINT" button after completing your simulation to get your results.
 
 
 Simulator 2:
+
 Step-1) Enter the Boolean inputs "A" and "B" and "Bin".
+
 Step-2) Enter the Boolean output for your corresponding inputs.
+
 Step-3) Click on "Check" Button to verify your output.
+
 Step-4) Click "Print" if you want to get print out of Truth Table.
+
 Step-5) Click "Reset" if you want to reset inputs and outputs.
 
  
